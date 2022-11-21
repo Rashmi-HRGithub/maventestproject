@@ -23,13 +23,11 @@ public class LoginPage {
 		PageFactory.initElements(driver, this);
 		
 	}	
-	//utilization
-	public WebElement get
+	
 		
 		
 		
-		
-	}
+	
 	
 	
 	

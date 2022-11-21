@@ -1,5 +1,6 @@
 package mavenTestProject;
 
+import java.io.IOException;
 import java.sql.SQLException;
 
 import org.openqa.selenium.WebDriver;
@@ -35,7 +36,7 @@ public class BaseClass {
 	
 	//@Parameters("BROWSER")
 	@BeforeClass(groups= {"smoke","regression"})
-	public void launchBrowser() throws InterruptedException
+	public void launchBrowser() throws InterruptedException, IOException
 	{
 		String BROWSER=fLib.readDataFromPropertyFile("browser");
 		if(BROWSER.equalsIgnoreCase("chrome"))
